@@ -5,8 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .fluit{
+
+    }
+  </style>
 </head>
 <body>
-  
+  <li class="fruit apple">a</li>
+  <li class="fruit banana">b</li>
+  <li class="fruit pine">p</li>
+  <li class="fruit elv">e</li>
+  <li class="fruit fuckyou">f</li>
+  <script>
+    const fruitArray = document.getElementsByClassName('fruit')
+    console.dir(fruitArray)
+    // fruitArray.forEach(element => { element.style.fontSize = "50px" });     //안됨
+    for(let i=0;i<fruitArray.length;i++){
+      fruitArray[i].style.fontSize = "50px"              //됨
+    }
+    // fruitArray[0].style.fontSize = "50px"             //됨
+    // fruitArray[0].setAttribute("font","50px")         //됨
+
+  </script>
 </body>
+
 </html>
